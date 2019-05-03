@@ -30,4 +30,5 @@ $ yarn prod
 ```env
 SECRET
 API_VER
+DB_URL
 ```
