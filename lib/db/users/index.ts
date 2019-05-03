@@ -20,16 +20,18 @@ const userSchema = new schema({
 		required: [true, "Password is required"],
 		unique: true,
 		trim: true
-	},
-	firstName: {
-		type: String,
-		required: [true, "First name is required"]
-	},
-	lastName: {
-		type: String,
-		required: [true, "Last name is required"]
 	}
+	// firstName: {
+	// 	type: String,
+	// 	required: [true, "First name is required"]
+	// },
+	// lastName: {
+	// 	type: String,
+	// 	required: [true, "Last name is required"]
+	// }
 });
+
+userSchema.set("toJSON", { virtuals: true });
 
 const User = mongoose.model("User", userSchema);
 
