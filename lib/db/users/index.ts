@@ -31,7 +31,7 @@ const userSchema = new schema({
 	},
 	userType: {
 		type: String,
-		enum: ["customer", "publicBusiness", "privateBusiness"],
+		enum: ["Citizen", "Public Business", "Private Business", "Admin"],
 		required: [true, "User type is required"]
 	},
 	serviceType: {
