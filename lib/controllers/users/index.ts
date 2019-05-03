@@ -43,7 +43,7 @@ export const authenticateUser = async (params: authUserParams) => {
 		} else {
 			const authSuccess = await bcrypt.compare(params.password, user.password);
 			if (authSuccess) {
-				const token = generateToken(user._id, user.email, "30d");
+				const token = generateToken(user._id, user.userType, "30d");
 				const { password, ...userWithoutPassword } = user._doc;
 				return {
 					status: 200,
