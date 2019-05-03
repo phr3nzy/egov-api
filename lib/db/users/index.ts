@@ -20,6 +20,11 @@ const userSchema = new schema({
 		required: [true, "Password is required"],
 		unique: true,
 		trim: true
+	},
+	userType: {
+		type: String,
+		enum: ["customer", "publicBusiness", "privateBusiness"],
+		required: [true, "User type is required"]
 	}
 	// firstName: {
 	// 	type: String,
