@@ -15,6 +15,14 @@ const userSchema = new schema({
 		unique: true,
 		trim: true
 	},
+	nationalNumber: {
+		type: Number,
+		required: [true, "National number is required"],
+		minlength: 8,
+		maxlength: 16,
+		unique: true,
+		trim: true
+	},
 	password: {
 		type: String,
 		required: [true, "Password is required"],
