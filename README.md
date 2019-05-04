@@ -8,7 +8,7 @@ Backend API for E-Government solution.
 - TypeScript
 - MongoDB
 - Authentication & Authorization
-- Rate Limiting & HTTP Headers
+- Rate Limiting, CORS & Security Headers
 - Error Handling
 - Built with Scalability in mind
 
